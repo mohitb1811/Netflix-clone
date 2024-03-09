@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        opacity: 10;
+    }
+    .header{
+        display: flex;
+        background-color: rgb(15, 15, 13);
+        color:white ;
+        opacity:0.9 ;
+    }
+    
+    img{
+        height: 100px;
+    }
+    ul{
+        display: flex;
+
+    }
+    li{
+        display: flex;
+        padding: 20px;
+    }
+    #hi{
+        border-radius: 10px;
+        width: 300px;
+        margin-right: 0%;
+        margin-left: 300px;
+        display: block;
+        font-size: 20px;
+    }
+     ul li a{
+        display: block;
+        padding: 3px 6px;
+        text-decoration: none ;
+        border-radius: 20px;
+        color: white;
+        font-size: 20px;
+     }
+     ul li a:hover{
+        color: rgb(1, 22, 22);
+        background-color: aliceblue;
+        /* font-size: 22px; */
+
+
+     }
+      .container{
+        z-index: -1;
+     overflow: hidden;
+     
+     }/*
+     .container img{
+        height: max-content;
+        width: 100%;
+     } */
+     /* #image{
+        width: 110px;
+        height: 870px;
+     } */
+     .slide{
+        width: 100%;
+        height: 80%;
+        position: absolute;
+        transition:1s;
+      
+     }
+     .nav{
+        text-align: center;
+        margin-top: 20px;
+     }
+     .nav button{
+        font-size: 20px;
+        padding: auto;
+        z-index: 1;
+        margin-top:540px;
+        width: 70px;
+     }
+     #image1{
+        overflow: hidden;
+        z-index: -1;
+        height: 4px;
+       
+     }
+     h1{
+        color: white;
+     }
+     #imga{
+        padding: 5px;
+        height: 200px;
+        width: 173px;
+        border-radius: 15px;
+        
+     }
+     #imgb{
+        padding:5px;
+        height: 200px;
+        width: 173px;
+        border-radius: 15px;
+        
+     }
+     #imgc{
+        padding:5px;
+        height: 200px;
+        width: 173px;
+        border-radius: 15px;
+        
+     }
+     #imgd{
+        padding: 5px;
+        height: 200px;
+        width: 173px;
+        border-radius: 15px;
+     }
+     #imge{
+        padding: 5px;
+        height: 200px;
+        width: 173px;
+        border-radius: 15px;
+     }
+     #imgf{
+        padding: 5px;
+        height: 200px;
+        width: 173px;
+        border-radius: 15px;
+     }
+     
+     #imgg{
+        padding: 5px;
+        height: 200px;
+        width: 173px;
+        border-radius: 15px;
+     }
+     
+     #imgh{
+        padding: 5px;
+        height: 200px;
+        width: 173px;
+       
+        border-radius: 15px;
+        
+     }
+     
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="logo.jpg" alt="logo">
+        </div>
+        <div class="mid">
+            <ul>
+                <li class="item"><a href="#">HOME</a></li>
+                <li class="item"><a href="#">DOWNLOADS</a></li>
+                <li class="item"><a href="#">YOUR PLAN</a></li>
+                <li class="item"><a href="#">CONTACT US</a></li>
+                <input type="text" placeholder="Search" id="hi">
+                
+            </ul>
+        </div>
+    </header>
+<div class="container" id="image1">
+    <!-- <img id="image" src="alldead.jpg"> -->
+    <img src="things.jpg"class="slide">
+    <img src="money.jpg" class="slide">
+    <img src="squid.jpg"class="slide">
+    <img src="alldead.jpg"class="slide">
+    <img src="education.jpg"class="slide">
+    
+</div>
+<div class="nav">
+    <button onclick="goPrev()">
+     
+    </button>
+    <button onclick="goNext()">
+      
+    </button>
+</div>
+<div class="main">
+    <h1>Trending Now</h1>
+    <a href="https://www.youtube.com/watch?v=HxtLlByaYTc"target="_blank"><img id=imga src="riverdale.jpg" alt=" "></a>
+    <a href="https://www.youtube.com/watch?v=pHIXtOrHF80&t=3s"target="_blank"><img id=imgb src="download.jpg" alt=" "></a>
+    <a href="https://www.youtube.com/watch?v=ZZtVaNRBeio&pp=ygUIeG8ga2l0dHk%3D"target="_blank"><img id=imgc src="kitty.jpg" alt=" "></a>
+    <a href="https://www.youtube.com/watch?v=ga1m0wjzscU"target="_blank"><img id=imgd src="you.jpg" alt=" "></a>
+    <a href="https://www.youtube.com/watch?v=49_44FFKZ1M"target="_blank"><img id=imge src="alice.jpg" alt=" "></a>
+    <a href="https://www.youtube.com/watch?v=HhesaQXLuRY"target="_blank"><img id=imgf src="bad.jpg" alt=" "></a>
+    <a href="https://www.youtube.com/watch?v=Di310WS8zLk" target="_blank"><img id=imgg src="wednesday.jpg" alt=" "></a>
+    <a href="https://www.youtube.com/watch?v=HyOCCCbxwMQ"target="_blank"><img id=imgh src="have.jpg" alt=" "></a>
+    <h1>Action Thrillers</h1>
+    <a href="https://www.youtube.com/watch?v=HxtLlByaYTc"target="_blank"><img id=imga src="hero.jpg" alt=" "></a>
+    <a href="https://www.youtube.com/watch?v=pHIXtOrHF80&t=3s"target="_blank"><img id=imgb src="bro.jpg" alt=" "></a>
+    <a href="https://www.youtube.com/watch?v=ZZtVaNRBeio&pp=ygUIeG8ga2l0dHk%3D"target="_blank"><img id=imgc src="lift.jpg" alt=" "></a>
+    <a href="https://www.youtube.com/watch?v=ga1m0wjzscU"target="_blank"><img id=imgd src="major.jpg" alt=" "></a>
+    <a href="https://www.youtube.com/watch?v=49_44FFKZ1M"target="_blank"><img id=imge src="malang.jpg" alt=" "></a>
+    <a href="https://www.youtube.com/watch?v=HhesaQXLuRY"target="_blank"><img id=imgf src="extraction.jpg" alt=" "></a>
+    <a href="https://www.youtube.com/watch?v=Di310WS8zLk" target="_blank"><img id=imgg src="jawan.jpg" alt=" "></a>
+    <a href="https://www.youtube.com/watch?v=HyOCCCbxwMQ"target="_blank"><img id=imgh src="fast.jpg" alt=" "></a>
+
+</div>
+<script src="first.js"></script>
+</body>
+</html>id=imga 
